@@ -6,7 +6,7 @@ import { ArrowDownIcon } from "@heroicons/react/24/outline";
 
 export default function Home() {
   return (
-    <main className="bg-bg">
+    <main id="top" className="bg-bg">
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute -top-[20%] -right-[10%] w-[70vw] h-[70vw] rounded-full bg-surface opacity-50 blur-3xl" />
@@ -67,8 +67,8 @@ export default function Home() {
           <p className="text-lg text-text-secondary leading-relaxed">
             I build clean, responsive, and user-focused web experiences with modern frontend tools.
           </p>
-          <Link href="#about" className="inline-block mt-8 text-accent font-medium hover:underline">
-            Read more
+          <Link href="#projects" className="inline-block mt-8 text-accent font-medium hover:underline">
+            See projects
           </Link>
         </div>
       </section>
@@ -79,8 +79,8 @@ export default function Home() {
           <p className="text-lg text-text-secondary leading-relaxed">
             Explore selected work including dashboards, product experiences, and frontend systems.
           </p>
-          <Link href="#projects" className="inline-block mt-8 text-accent font-medium hover:underline">
-            Browse projects
+          <Link href="#contact" className="inline-block mt-8 text-accent font-medium hover:underline">
+            Contact me
           </Link>
         </div>
       </section>
@@ -91,8 +91,8 @@ export default function Home() {
           <p className="text-lg text-text-secondary leading-relaxed">
             Have something in mind? Let&apos;s connect and build it together.
           </p>
-          <Link href="#contact" className="inline-block mt-8 text-accent font-medium hover:underline">
-            Get in touch
+          <Link href="#top" className="inline-block mt-8 text-accent font-medium hover:underline">
+            Back to top
           </Link>
         </div>
       </section>
