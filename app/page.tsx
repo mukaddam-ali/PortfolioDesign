@@ -67,7 +67,7 @@ export default function Home() {
           <p className="text-lg text-text-secondary leading-relaxed">
             I build clean, responsive, and user-focused web experiences with modern frontend tools.
           </p>
-          <Link href="/about" className="inline-block mt-8 text-accent font-medium hover:underline">
+          <Link href="#about" className="inline-block mt-8 text-accent font-medium hover:underline">
             Read more
           </Link>
         </div>
@@ -79,7 +79,7 @@ export default function Home() {
           <p className="text-lg text-text-secondary leading-relaxed">
             Explore selected work including dashboards, product experiences, and frontend systems.
           </p>
-          <Link href="/projects" className="inline-block mt-8 text-accent font-medium hover:underline">
+          <Link href="#projects" className="inline-block mt-8 text-accent font-medium hover:underline">
             Browse projects
           </Link>
         </div>
@@ -91,7 +91,7 @@ export default function Home() {
           <p className="text-lg text-text-secondary leading-relaxed">
             Have something in mind? Let&apos;s connect and build it together.
           </p>
-          <Link href="/contact" className="inline-block mt-8 text-accent font-medium hover:underline">
+          <Link href="#contact" className="inline-block mt-8 text-accent font-medium hover:underline">
             Get in touch
           </Link>
         </div>

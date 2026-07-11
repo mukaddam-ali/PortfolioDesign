@@ -2,20 +2,18 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navLinks = [
-    { name: "About", href: "/about" },
-    { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
+    { name: "About", href: "/#about" },
+    { name: "Projects", href: "/#projects" },
+    { name: "Contact", href: "/#contact" },
 ];
 
 export default function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const pathname = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -43,16 +41,9 @@ export default function Navigation() {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className={`text-sm font-medium transition-colors hover:text-accent ${pathname === link.href ? "text-accent" : "text-text-secondary"
-                                    }`}
+                                className="text-sm font-medium transition-colors hover:text-accent text-text-secondary"
                             >
                                 {link.name}
-                                {pathname === link.href && (
-                                    <motion.div
-                                        layoutId="underline"
-                                        className="h-0.5 bg-accent mt-1"
-                                    />
-                                )}
                             </Link>
                         ))}
                     </nav>
@@ -88,8 +79,7 @@ export default function Navigation() {
                                     key={link.name}
                                     href={link.href}
                                     onClick={() => setIsMobileMenuOpen(false)}
-                                    className={`text-2xl font-semibold ${pathname === link.href ? "text-accent" : "text-text-secondary"
-                                        }`}
+                                    className="text-2xl font-semibold text-text-secondary"
                                 >
                                     {link.name}
                                 </Link>
